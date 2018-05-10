@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d36c0cd7-b875-464e-b216-4b5c27eab81b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/quizzes/random_nomore.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/quizzes/random_play.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/quizzes/random_result.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/quiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/quiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.ejs" afterDir="false" />
-    </list>
+    <list default="true" id="d36c0cd7-b875-464e-b216-4b5c27eab81b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,8 +30,8 @@
       <file leaf-file-name="random_play.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/quizzes/random_play.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -121,6 +111,7 @@
         <option value="$PROJECT_DIR$/views/quizzes/play.ejs" />
         <option value="$PROJECT_DIR$/controllers/quiz.js" />
         <option value="$PROJECT_DIR$/views/quizzes/_form.ejs" />
+        <option value="$PROJECT_DIR$/views/quizzes/random_play.ejs" />
       </list>
     </option>
   </component>
@@ -228,23 +219,22 @@
       <updated>1525780958553</updated>
       <workItem from="1525780964946" duration="4407000" />
       <workItem from="1525859061726" duration="342000" />
-      <workItem from="1525898435908" duration="1931000" />
+      <workItem from="1525898435908" duration="2810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6680000" />
+    <option name="totallyTimeSpent" value="7559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1602" height="912" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24920736" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.40308988" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26737967" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.40240642" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26737967" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286517" />
@@ -492,8 +482,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/quizzes/random_play.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

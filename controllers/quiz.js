@@ -213,7 +213,7 @@ exports.randomcheck = (req, res, next) => {
 
     const score = req.session.randomPlay.length
     if(!result){
-        delete req.session.randomPlay.push(req.quiz.id);
+        delete req.session.randomPlay;
     }
 
     res.render('quizzes/random_result', {answer,result,score});

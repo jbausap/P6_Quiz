@@ -191,6 +191,7 @@ exports.randomplay= (req, res, next) => {
                 score: req.session.randomPlay.length
             });
         }else{
+            delete req.session.randomPlay;
             res.render('quizzes/random_nomore', {
                 score: req.session.randomPlay.length
             });

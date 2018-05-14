@@ -159,6 +159,18 @@ exports.check = (req, res, next) => {
 // GET /quizzes/:quizId/play
 exports.randomplay= (req, res, next) => {
 
+    // if(!req.session.randomPlay) {
+    //     req.session.randomPlay = {
+    //         lastQuiz: 0,
+    //         resolved: []
+    //     };
+    // }
+    //
+    // Sequelize.Promise.resolve()
+    // .then(function() {
+    //     if
+    // })
+
     req.session.randomPlay = req.session.randomPlay || [];
     const whereOpt = { 'id' : {[Sequelize.Op.notIn]: req.session.randomPlay}};
     models.quiz.count({where: whereOpt})
@@ -194,8 +206,9 @@ exports.randomcheck = (req, res, next) => {
     const result=answer.toLocaleLowerCase().trim() === answer2.toLocaleLowerCase().trim();
 
     if(result){
-        req.session.randomPlay.push(req.quiz.id);
-
+        if(req.session.randomPlay.indexOf(req.quiz.id)===-1) {
+            req.session.randomPlay.push(req.quiz.id);
+        }
     }
 
     const score = req.session.randomPlay.length

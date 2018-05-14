@@ -201,18 +201,18 @@ exports.randomplay= (req, res, next) => {
 
 exports.randomcheck = (req, res, next) => {
     req.session.randomPlay=req.session.randomPlay||[];
-
+    var score =req.session.randomPlay.length;
     const answer=req.query.answer||"";
     const answer2=req.quiz.answer;
-    const result=answer.toLocaleLowerCase().trim() === answer2.toLocaleLowerCase().trim();
+    const result=(answer.toLowerCase().trim() === answer2.toLowerCase().trim());
 
     if(result){
         if(req.session.randomPlay.indexOf(req.quiz.id)===-1) {
             req.session.randomPlay.push(req.quiz.id);
+            score=req.session.randomPlay.length;
         }
     }
 
-    const score = req.session.randomPlay.length
     if(!result){
         delete req.session.randomPlay;
     }

@@ -191,9 +191,10 @@ exports.randomplay= (req, res, next) => {
                 score: req.session.randomPlay.length
             });
         }else{
+            score = req.session.randomPlay.length
             delete req.session.randomPlay;
             res.render('quizzes/random_nomore', {
-                score: req.session.randomPlay.length
+                score: score
             });
         }
     }).catch(error => next(error));

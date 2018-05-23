@@ -25,7 +25,7 @@ exports.create = (req, res, next) => {
         {
             text: req.body.text,
             quizId: req.quiz.id,
-            authorId: req.session.user && req.session.user.tip
+            authorId: req.session.user && req.session.user.id
         });
 
     tip.save()
